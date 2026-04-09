@@ -3,26 +3,25 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Abdiqafar Hussein Ali | Portfolio</title>
+<title>Abdiqafar Hussein Ali | Cybersecurity Portfolio</title>
 
 <style>
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
-    background: #020617;
-    color: white;
+    font-family: monospace;
+    background: black;
+    color: #00ff00;
 }
 
 /* NAV */
 nav {
     padding: 15px;
-    background: #020617;
-    border-bottom: 1px solid #1e293b;
+    border-bottom: 1px solid #003300;
 }
 
 nav h2 {
     margin: 0;
-    color: #38bdf8;
+    color: #00ff00;
 }
 
 /* HERO */
@@ -31,33 +30,25 @@ nav h2 {
     padding: 100px 20px;
 }
 
-.hero h1 {
-    font-size: 2.5rem;
-}
-
-.btn {
+.typing {
+    border-right: 2px solid #00ff00;
     display: inline-block;
-    margin-top: 20px;
-    padding: 12px 25px;
-    background: #38bdf8;
-    color: black;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 /* SECTIONS */
 section {
-    padding: 60px 20px;
+    padding: 50px 20px;
     max-width: 900px;
     margin: auto;
 }
 
 h2 {
-    color: #38bdf8;
+    color: #00ff00;
 }
 
-/* SKILLS GRID */
+/* GRID */
 .grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
@@ -65,31 +56,22 @@ h2 {
 }
 
 .grid div {
-    background: #0f172a;
-    padding: 15px;
-    border-radius: 8px;
-    text-align: center;
+    border: 1px solid #003300;
+    padding: 10px;
 }
 
 /* PROJECTS */
 .project-card {
-    background: #0f172a;
-    padding: 20px;
-    margin-top: 20px;
-    border-radius: 10px;
-}
-
-/* CONTACT */
-.contact p {
-    margin: 10px 0;
+    border: 1px solid #003300;
+    padding: 15px;
+    margin-top: 15px;
 }
 
 /* FOOTER */
 footer {
     text-align: center;
     padding: 20px;
-    background: #020617;
-    border-top: 1px solid #1e293b;
+    border-top: 1px solid #003300;
 }
 </style>
 
@@ -98,81 +80,82 @@ footer {
 <body>
 
 <nav>
-    <h2>Abdiqafar</h2>
+    <h2>root@abdiqafar:~#</h2>
 </nav>
 
 <section class="hero">
-    <h1>Hi, I'm Abdiqafar Hussein Ali</h1>
-    <p>Software Engineer | Cybersecurity Analyst (SOC L1)</p>
-    <a href="#projects" class="btn">View My Work</a>
+    <h1 class="typing" id="typing"></h1>
+    <p>Cybersecurity Analyst (SOC L1) | SIEM | Threat Detection</p>
 </section>
 
-<section class="about">
-    <h2>About Me</h2>
+<section>
+    <h2>> About Me</h2>
     <p>
-        I am a Cybersecurity Analyst (SOC L1) and Software Engineer with hands-on
-        experience in SIEM monitoring using Wazuh, network traffic analysis with
-        Wireshark, and real-time security monitoring. I specialize in detecting,
-        analyzing, and responding to security threats across Windows and Linux systems.
+        Cybersecurity Analyst (SOC L1) with experience in Wazuh SIEM,
+        Wireshark packet analysis, and real-time security monitoring.
+        Skilled in detecting and responding to threats across systems.
     </p>
 </section>
 
-<section class="skills">
-    <h2>Technical Skills</h2>
+<section>
+    <h2>> Skills</h2>
     <div class="grid">
-        <div>SIEM (Wazuh)</div>
-        <div>Log Analysis</div>
+        <div>Wazuh SIEM</div>
         <div>Security Monitoring</div>
         <div>Threat Detection</div>
         <div>Incident Response</div>
-        <div>Wireshark (Packet Analysis)</div>
+        <div>Wireshark</div>
+        <div>Log Analysis</div>
         <div>Windows Security</div>
         <div>Kali Linux</div>
-        <div>Networking Fundamentals</div>
-        <div>JavaScript / Node.js</div>
     </div>
 </section>
 
-<section class="projects" id="projects">
-    <h2>Cybersecurity Projects</h2>
+<section>
+    <h2>> Projects</h2>
 
     <div class="project-card">
         <h3>Wazuh SIEM Monitoring Lab</h3>
-        <p>
-            Deployed and configured Wazuh SIEM to collect and analyze logs from
-            endpoints. Monitored security events, detected suspicious activities,
-            and generated alerts for incident response.
-        </p>
+        <p>Configured SIEM to monitor logs and detect threats.</p>
     </div>
 
     <div class="project-card">
-        <h3>Network Traffic Analysis with Wireshark</h3>
-        <p>
-            Captured and analyzed network packets to identify anomalies,
-            suspicious traffic patterns, and potential threats.
-        </p>
+        <h3>Wireshark Traffic Analysis</h3>
+        <p>Analyzed packets to identify suspicious activity.</p>
     </div>
 
     <div class="project-card">
-        <h3>Security Monitoring & Threat Detection</h3>
-        <p>
-            Performed continuous monitoring of logs and systems to detect threats,
-            investigate alerts, and support incident response operations.
-        </p>
+        <h3>Security Monitoring</h3>
+        <p>Performed continuous monitoring and incident analysis.</p>
     </div>
 
 </section>
 
-<section class="contact">
-    <h2>Contact</h2>
+<section>
+    <h2>> Contact</h2>
     <p>Email: nyapo349@gmail.com</p>
     <p>Phone: 0722205379</p>
     <p>Phone: 0727145526</p>
 </section>
 
 <footer>
-    <p>© 2026 Abdiqafar Hussein Ali</p>
+    <p>> System Secure | 2026</p>
 </footer>
+
+<script>
+const text = "Initializing SOC Analyst... Access Granted.";
+let i = 0;
+
+function typingEffect() {
+    if (i < text.length) {
+        document.getElementById("typing").innerHTML += text.charAt(i);
+        i++;
+        setTimeout(typingEffect, 50);
+    }
+}
+
+typingEffect();
+</script>
 
 </body>
 </html>
